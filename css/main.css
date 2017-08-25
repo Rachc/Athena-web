@@ -108,10 +108,11 @@ a{
   font-size: 1.4em;
 }
 
-.listaProjetos{
+#listaProjetos{
   padding-left: 55px;
 }
-.listaProjetos ul li{
+
+#listaProjetos ul li{
   color: #95c6bb;
   font-family: 'Contrail One', cursive;
   padding: 2px;
