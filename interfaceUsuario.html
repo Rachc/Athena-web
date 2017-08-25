@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/script.js">
+	  </script>
     <title>Athena - Smart project manager</title>
   </head>
   <body>
@@ -28,10 +30,10 @@
       <div class="menuLateral"> <!-- a soma da largura dessa div com a div telaConteudo deve ser de 100%-->
         <div class="menuFeature"> <!-- no momento só tem projetos -->
           <div class="featureProjeto">
-            Projetos
+            <a href="#" onclick="escondeDiv()">Projetos</a>
           </div>
 
-          <div class="listaProjetos"> <!-- no momento ela vai estar com display: none. A idéia é que ela apareça só quando você clica em projetos -->
+          <div id="listaProjetos"> <!-- no momento ela vai estar com display: none. A idéia é que ela apareça só quando você clica em projetos -->
             <ul>
               <li>Projeto 1</li>
               <li>Projeto 2</li>
