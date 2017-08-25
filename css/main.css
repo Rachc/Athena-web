@@ -41,6 +41,50 @@ a{
   text-decoration: none;
 }
 
+.cadastro{
+  background-color: #a2d8cb;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.cadastro h1{
+  padding-top: 50px;
+  color: #f9f9f9;
+}
+
+.cadastro h1 span{
+  font-family: 'Contrail One', cursive;
+  color: #7e7e7e;
+}
+
+.cadastro form{
+  margin: 50px;
+}
+
+.cadastro input[type="text"]{
+  width: 200px;
+  border: 1px solid #7e7e7e;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.cadastro button{
+  width: 100px;
+  background-color: #7e7e7e;
+  border-radius: 20px;
+  padding: 5px;
+  color: #f9f9f9;
+  border: none;
+}
+
+.landing-footer{
+  height: 100px;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #7e7e7e;
+}
+
 .interfaceNav{
   height: 105px;
   width: 100%;
