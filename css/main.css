@@ -152,11 +152,10 @@ a{
   font-size: 1.4em;
 }
 
-#listaProjetos{
+.listaProjetos{
   padding-left: 55px;
 }
-
-#listaProjetos ul li{
+.listaProjetos ul li{
   color: #95c6bb;
   font-family: 'Contrail One', cursive;
   padding: 2px;
@@ -186,4 +185,170 @@ a{
   font-size: 1.4em;
 
   margin-top: 10px;
+}
+
+.navegacao{
+  height: 114%;
+  background-image: url("../img/header-img.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: white;
+  display:block;
+}
+
+.logoLanding{
+  margin-left: 20px;
+  height: 150px;
+  background-image: url("../img/logoLanding.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  
+}
+
+div nav li{
+  margin: 50px 25px 0px 25px;
+  float: right;
+  list-style-type: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Contrail One', cursive;
+  font-size: 25px;
+}
+
+div nav li button{
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  color: #95c6bb;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Contrail One', cursive;
+  font-size: 25px;
+  padding: 0px 20px 0px 20px;
+  margin-right: 10px;
+}
+
+.header{
+  height: 550px;
+}
+
+.apresentacao{
+  width: 40%;
+  float: left;
+  margin-left: 3%;
+  margin-top: 18%;
+  text-align: center;
+
+}
+
+.btn1{
+  background-color: #a2d8cb;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  font-size: 20px;
+  margin: 50px 20px 0px 0px;
+}
+
+.btn2{
+  background-color: transparent;
+  border: solid;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  font-size: 20px;
+  margin: 50px 20px 0px 20px;
+}
+  
+h1{
+  font-size: 20px;
+}
+
+spam{
+  color: #95c6bb;
+}
+
+.sobre{
+  background-color: #7e7e7e;
+  display: inline-flex;
+  width: 100%
+}
+
+h4{
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+section div p{
+  color: white;
+}
+
+.motivo1{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 30px 100px 50px 100px;
+}
+
+.motivo1Imagem{
+  background-image: url("../img/motivo1.png");
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  background-position: left;
+  display: flex;
+  margin-left:60px;
+ 
+}
+
+.motivo1texto{
+  width: 250px;
+  text-align: justify;
+}
+
+.motivo2{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: justify;
+  margin: 30px 100px 10px 100px;
+}
+
+
+.motivo2Imagem{
+  background-image: url("../img/motivo2.png");
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  background-position: left;
+  display: block;
+  margin-left: 70px;
+}
+
+.motivo2texto{
+  width: 250px;
+}
+
+.motivo3{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: justify;
+  margin: 30px 100px 10px 100px;
+}
+
+
+.motivo3Imagem{
+  background-image: url("../img/motivo3.png");
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  background-position: left;
+  display: flex;
+  margin-left:55px;
+}
+
+.motivo3texto{
+  width: 250px;
 }
