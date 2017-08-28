@@ -41,107 +41,9 @@ a{
   text-decoration: none;
 }
 
-.interfaceNav{
-  height: 105px;
-  width: 100%;
-  background-color: #e7e7e7;
-  box-shadow: 2px 2px 10px #7e7e7e;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navInterface{
-  padding-right: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.logoInterface{
-  width: 202px;
-  height: 73px;
-  padding-left: 15px;
-}
-
-.fotoUsuario{
-  width: 68px;
-  height: 86px;
-}
-
-.dadosUsuario{
-  padding-left: 5px;
-}
-
-.dadosUsuario p span{
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.conteudoInterface{
-  display: flex;
-  min-height: 560px;
-}
-
-.menuLateral{
-  width: 15%;
-  background-color: #e7e7e7;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px 2%;
-  font-family: 'Contrail One', cursive;
-}
-
-.telaConteudo{
-  width: 85%;
-  background-color: #f9f9f9;
-}
-
-.featureProjeto{
-  height: 38px;
-  padding-left: 45px;
-  background-image: url("../img/projetos.png");
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-
-  font-family: 'Contrail One', cursive;
-  font-size: 1.4em;
-}
-
-.listaProjetos{
-  padding-left: 55px;
-}
-.listaProjetos ul li{
-  color: #95c6bb;
-  font-family: 'Contrail One', cursive;
-  padding: 2px;
-}
-
-.mensagemUsuario{
-  height: 38px;
-  padding-left: 45px;
-  background-image: url("../img/mensagem.png");
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-
-  font-family: 'Contrail One', cursive;
-  font-size: 1.4em;
-}
-
-.downloadUsuario{
-  height: 38px;
-  padding-left: 45px;
-  background-image: url("../img/download.png");
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-
-  font-family: 'Contrail One', cursive;
-  font-size: 1.4em;
-
-  margin-top: 10px;
-}
+/*
+* Landing
+*/
 
 .navegacao{
   height: 114%;
@@ -350,4 +252,153 @@ a{
   text-align: center;
   background-color: #f9f9f9;
   color: #7e7e7e;
+}
+
+/*
+  Tela do Usuário
+*/
+.interfaceNav{
+  height: 105px;
+  width: 100%;
+  background-color: #e7e7e7;
+  box-shadow: 2px 2px 10px #7e7e7e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navInterface{
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.logoInterface{
+  width: 202px;
+  height: 73px;
+  padding-left: 15px;
+}
+
+.fotoUsuario{
+  width: 68px;
+  height: 86px;
+}
+
+.dadosUsuario{
+  padding-left: 5px;
+}
+
+.dadosUsuario p span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.conteudoInterface{
+  display: flex;
+  min-height: 560px;
+}
+
+.menuLateral{
+  width: 15%;
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 2%;
+  font-family: 'Contrail One', cursive;
+}
+
+.telaConteudo{
+  width: 85%;
+  background-color: #f9f9f9;
+}
+
+.featureProjeto{
+  height: 38px;
+  padding-left: 45px;
+  background-image: url("../img/projetos.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  font-family: 'Contrail One', cursive;
+  font-size: 1.4em;
+}
+
+.listaProjetos{
+  padding-left: 55px;
+}
+.listaProjetos ul li{
+  color: #95c6bb;
+  font-family: 'Contrail One', cursive;
+  padding: 2px;
+}
+
+.mensagemUsuario{
+  height: 38px;
+  padding-left: 45px;
+  background-image: url("../img/mensagem.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  font-family: 'Contrail One', cursive;
+  font-size: 1.4em;
+}
+
+.downloadUsuario{
+  height: 38px;
+  padding-left: 45px;
+  background-image: url("../img/download.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  font-family: 'Contrail One', cursive;
+  font-size: 1.4em;
+
+  margin-top: 10px;
+}
+
+/*
+  Detalhe de projeto
+*/
+
+.telaConteudo{
+  padding: 30px 30px 0 30px;
+}
+
+.telaConteudo h1{
+  font-family: 'Contrail One', cursive;
+  color: #95c6bb;
+}
+
+.timeline{
+  width:848px;
+  margin: auto;
+}
+.tlDatas{
+  display: flex;
+  font-family: 'Contrail One', cursive;
+  color: #7e7e7e;
+}
+
+.tlDataComeco{
+  background-color: lavender;
+  flex-grow: 1;
+  text-align: left;
+  font-family: 'Contrail One', cursive;
+}
+
+.tlDataFinal{
+  background-color: wheat;
+  flex-grow: 1;
+  text-align: right;
+  font-family: 'Contrail One', cursive;
+}
+
+.tlImagem{
+
+}
+.tlHoje{
+  background-color: violet;
 }

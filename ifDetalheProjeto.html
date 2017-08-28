@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Athena - Smart project manager</title>
+  </head>
+  <body>
+
+    <nav class="interfaceNav"><!-- Altura de 105px -->
+      <div class="logoInterface">
+        <img src="img/logoUsuario.png" alt="Athena Logo">
+      </div>
+      <div class="navInterface">
+        <div class="fotoUsuario">
+          <img src="img/avatarUsuario.png" alt="Nome do Usuario">
+        </div>
+        <div class="dadosUsuario">
+          <p>Bem vindo</p>
+          <p><span>Fulano</span> <img src="img/setaBaixo.png" alt=""></p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="conteudoInterface"> <!-- Aqui vai toda a parte abaixo do menu. Tanto o menu lateral quanto a navegação -->
+
+      <div class="menuLateral"> <!-- a soma da largura dessa div com a div telaConteudo deve ser de 100%-->
+        <div class="menuFeature"> <!-- no momento só tem projetos -->
+          <div class="featureProjeto">
+            Projetos
+          </div>
+
+          <div class="listaProjetos"> <!-- no momento ela vai estar com display: none. A idéia é que ela apareça só quando você clica em projetos -->
+            <ul>
+              <li>Projeto 1</li>
+              <li>Projeto 2</li>
+              <li>Projeto 3</li>
+              <li>Projeto 4</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="menuExtras"> <!-- essa parte da separado do  menu lateral por questão de posicionamento. Essa parte vai ficar lá embaixo-->
+          <div class="mensagemUsuario"> <!-- coloca o background dessa div como a imagem mensagem.png, background repeat: no-repeat e background-position left-->
+            Mensagem
+          </div>
+          <div class="downloadUsuario"> <!-- Mesmo esquema de mensagem -->
+            Download
+          </div>
+        </div>
+
+      </div>
+
+      <div class="telaConteudo"><!-- a soma da largura dessa div com a div menuLateral deve ser de 100%-->
+        <!-- é aqui que todo o conteudo vai aparecer. Tem que fazer uma arquivo diferente pra cada feature.-->
+
+        <h1>Título do Projeto</h1>
+
+        <div class="timeline">
+          <div class="tlDatas">
+            <div class="tlDataComeco">
+              hoje
+            </div>
+            <div class="tlDataFinal">
+              depois
+            </div>
+          </div>
+          <div class="tlImagem">
+            <img src="img/timeline.png" alt="">
+          </div>
+          <div class="tlHoje">
+            a
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
