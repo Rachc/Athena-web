@@ -373,6 +373,7 @@ a{
 }
 
 .timeline{
+  padding-top: 30px;
   width:848px;
   margin: auto;
 }
@@ -383,14 +384,12 @@ a{
 }
 
 .tlDataComeco{
-  background-color: lavender;
   flex-grow: 1;
   text-align: left;
   font-family: 'Contrail One', cursive;
 }
 
 .tlDataFinal{
-  background-color: wheat;
   flex-grow: 1;
   text-align: right;
   font-family: 'Contrail One', cursive;
@@ -400,5 +399,23 @@ a{
 
 }
 .tlHoje{
-  background-color: violet;
+
+}
+
+.tlHojeNav{
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+}
+.setaCima{
+  margin: 0 auto;
+}
+
+.tlHojeData{
+  text-align: center;
+}
+
+.tlHojeData p{
+  font-family: 'Contrail One', cursive;
+  color: #95c6bb;
 }
