@@ -17,6 +17,20 @@ fontes:
     font-family: 'Contrail One', cursive;
 */
 
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('../fonte/Roboto-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Contrail One', cursive;
+  src: url('../fonte/ContrailOne-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
 *{
   margin:0;
   padding: 0;
