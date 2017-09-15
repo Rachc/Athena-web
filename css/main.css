@@ -17,6 +17,20 @@ fontes:
     font-family: 'Contrail One', cursive;
 */
 
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('../fonte/Roboto-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Contrail One', cursive;
+  src: url('../fonte/ContrailOne-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
 *{
   margin:0;
   padding: 0;
@@ -41,107 +55,9 @@ a{
   text-decoration: none;
 }
 
-.interfaceNav{
-  height: 105px;
-  width: 100%;
-  background-color: #e7e7e7;
-  box-shadow: 2px 2px 10px #7e7e7e;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navInterface{
-  padding-right: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.logoInterface{
-  width: 202px;
-  height: 73px;
-  padding-left: 15px;
-}
-
-.fotoUsuario{
-  width: 68px;
-  height: 86px;
-}
-
-.dadosUsuario{
-  padding-left: 5px;
-}
-
-.dadosUsuario p span{
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.conteudoInterface{
-  display: flex;
-  min-height: 560px;
-}
-
-.menuLateral{
-  width: 15%;
-  background-color: #e7e7e7;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px 2%;
-  font-family: 'Contrail One', cursive;
-}
-
-.telaConteudo{
-  width: 85%;
-  background-color: #f9f9f9;
-}
-
-.featureProjeto{
-  height: 38px;
-  padding-left: 45px;
-  background-image: url("../img/projetos.png");
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-
-  font-family: 'Contrail One', cursive;
-  font-size: 1.4em;
-}
-
-.listaProjetos{
-  padding-left: 55px;
-}
-.listaProjetos ul li{
-  color: #95c6bb;
-  font-family: 'Contrail One', cursive;
-  padding: 2px;
-}
-
-.mensagemUsuario{
-  height: 38px;
-  padding-left: 45px;
-  background-image: url("../img/mensagem.png");
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-
-  font-family: 'Contrail One', cursive;
-  font-size: 1.4em;
-}
-
-.downloadUsuario{
-  height: 38px;
-  padding-left: 45px;
-  background-image: url("../img/download.png");
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-
-  font-family: 'Contrail One', cursive;
-  font-size: 1.4em;
-
-  margin-top: 10px;
-}
+/*
+* Landing
+*/
 
 .navegacao{
   height: 114%;
@@ -350,4 +266,288 @@ a{
   text-align: center;
   background-color: #f9f9f9;
   color: #7e7e7e;
+}
+
+/*
+  Tela do Usuário
+*/
+.interfaceNav{
+  height: 105px;
+  width: 100%;
+  background-color: #e7e7e7;
+  box-shadow: 2px 2px 10px #7e7e7e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navInterface{
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.logoInterface{
+  width: 202px;
+  height: 73px;
+  padding-left: 15px;
+}
+
+.fotoUsuario{
+  width: 68px;
+  height: 86px;
+}
+
+.dadosUsuario{
+  padding-left: 5px;
+}
+
+.dadosUsuario p span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.conteudoInterface{
+  display: flex;
+  min-height: 560px;
+}
+
+.menuLateral{
+  width: 15%;
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 2%;
+  font-family: 'Contrail One', cursive;
+}
+
+.telaConteudo{
+  width: 85%;
+  background-color: #f9f9f9;
+}
+
+.featureProjeto{
+  height: 38px;
+  padding-left: 45px;
+  background-image: url("../img/projetos.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  font-family: 'Contrail One', cursive;
+  font-size: 1.4em;
+}
+
+.listaProjetos{
+  padding-left: 55px;
+}
+.listaProjetos ul li{
+  color: #95c6bb;
+  font-family: 'Contrail One', cursive;
+  padding: 2px;
+}
+
+.mensagemUsuario{
+  height: 38px;
+  padding-left: 45px;
+  background-image: url("../img/mensagem.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  font-family: 'Contrail One', cursive;
+  font-size: 1.4em;
+}
+
+.downloadUsuario{
+  height: 38px;
+  padding-left: 45px;
+  background-image: url("../img/download.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+  font-family: 'Contrail One', cursive;
+  font-size: 1.4em;
+
+  margin-top: 10px;
+}
+
+/*
+  Detalhe de projeto
+*/
+
+.telaConteudo{
+  padding: 30px 30px 0 30px;
+}
+
+.telaConteudo h1{
+  font-family: 'Contrail One', cursive;
+  color: #95c6bb;
+}
+
+.timeline{
+  padding-top: 30px;
+  width:848px;
+  margin: auto;
+}
+.tlDatas{
+  display: flex;
+  font-family: 'Contrail One', cursive;
+  color: #7e7e7e;
+}
+
+.tlDataComeco{
+  flex-grow: 1;
+  text-align: left;
+  font-family: 'Contrail One', cursive;
+}
+
+.tlDataFinal{
+  flex-grow: 1;
+  text-align: right;
+  font-family: 'Contrail One', cursive;
+}
+
+.tlImagem{
+
+}
+.tlHoje{
+
+}
+
+.tlHojeNav{
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+}
+.setaCima{
+  margin: 0 auto;
+}
+
+.tlHojeData{
+  text-align: center;
+}
+
+.tlHojeData p{
+  font-family: 'Contrail One', cursive;
+  color: #95c6bb;
+}
+
+.grupoAtividades{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.unidadeAtividade{
+  display: flex;
+  width: 80%;
+  margin: 5px auto;
+  flex-wrap: wrap;
+}
+
+.atvCor{
+  width: 5%;
+  background-color: aquamarine;
+  padding: 10px 0;
+}
+
+.atvDescricao{
+  width: 65%;
+  background-color: #e7e7e7;
+  padding: 10px 0;
+  font-family: 'Contrail One', cursive;
+}
+
+.atvDescricao p{
+  font-family: 'Contrail One', cursive;
+}
+
+.atvDescricao p span{
+  color: #95c6bb;
+}
+
+.atvResponsavel{
+  width: 30%;
+  background-color: #7e7e7e;
+  padding: 10px 0;
+}
+
+.atvResponsavel p{
+  color: #e7e7e7;
+  font-family: 'Contrail One', cursive;
+  text-align: center;
+}
+
+.detalheAtividade{
+  background-color: #7e7e7e;
+  color: #f9f9f9;
+  width: 100%;
+  padding: 10px;
+  display: none;
+}
+
+.subatividades{
+  width: 100%;
+}
+
+.subatividades p{
+  color: #f9f9f9;
+}
+
+.subatividades p span{
+  font-weight: bold;
+  color: #f9f9f9;
+}
+
+.tabelasAtividades{
+  display: flex;
+  color: #f9f9f9;
+  justify-content: space-between;
+}
+
+.tabelasAtividades table{
+  width: 100%;
+  color: #f9f9f9;
+  text-align: center;
+}
+
+.tabelasAtividades th{
+  color: #f9f9f9;
+  /*text-align: center;*/
+}
+
+.tabelasAtividades tr{
+  color: #f9f9f9;
+}
+
+.tabelasAtividades td{
+  color: #f9f9f9;
+  /*text-align: center;*/
+}
+
+.tblBlue{
+  color: #95c6bb !important;
+}
+
+.tblBlue span{
+  color: #95c6bb !important;
+  font-weight: bold;
+}
+
+.tblTotal{
+  font-weight: bold !important;
+  text-align: right !important;
+  text-transform: uppercase !important;
+}
+
+.tabelaRisco{
+  width: 40%;
+  color: #f9f9f9;
+}
+
+.tabelaRecurso{
+  width: 40%;
+  color: #f9f9f9;
 }
