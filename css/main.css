@@ -433,3 +433,121 @@ a{
   font-family: 'Contrail One', cursive;
   color: #95c6bb;
 }
+
+.grupoAtividades{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.unidadeAtividade{
+  display: flex;
+  width: 80%;
+  margin: 5px auto;
+  flex-wrap: wrap;
+}
+
+.atvCor{
+  width: 5%;
+  background-color: aquamarine;
+  padding: 10px 0;
+}
+
+.atvDescricao{
+  width: 65%;
+  background-color: #e7e7e7;
+  padding: 10px 0;
+  font-family: 'Contrail One', cursive;
+}
+
+.atvDescricao p{
+  font-family: 'Contrail One', cursive;
+}
+
+.atvDescricao p span{
+  color: #95c6bb;
+}
+
+.atvResponsavel{
+  width: 30%;
+  background-color: #7e7e7e;
+  padding: 10px 0;
+}
+
+.atvResponsavel p{
+  color: #e7e7e7;
+  font-family: 'Contrail One', cursive;
+  text-align: center;
+}
+
+.detalheAtividade{
+  background-color: #7e7e7e;
+  color: #f9f9f9;
+  width: 100%;
+  padding: 10px;
+  display: none;
+}
+
+.subatividades{
+  width: 100%;
+}
+
+.subatividades p{
+  color: #f9f9f9;
+}
+
+.subatividades p span{
+  font-weight: bold;
+  color: #f9f9f9;
+}
+
+.tabelasAtividades{
+  display: flex;
+  color: #f9f9f9;
+  justify-content: space-between;
+}
+
+.tabelasAtividades table{
+  width: 100%;
+  color: #f9f9f9;
+  text-align: center;
+}
+
+.tabelasAtividades th{
+  color: #f9f9f9;
+  /*text-align: center;*/
+}
+
+.tabelasAtividades tr{
+  color: #f9f9f9;
+}
+
+.tabelasAtividades td{
+  color: #f9f9f9;
+  /*text-align: center;*/
+}
+
+.tblBlue{
+  color: #95c6bb !important;
+}
+
+.tblBlue span{
+  color: #95c6bb !important;
+  font-weight: bold;
+}
+
+.tblTotal{
+  font-weight: bold !important;
+  text-align: right !important;
+  text-transform: uppercase !important;
+}
+
+.tabelaRisco{
+  width: 40%;
+  color: #f9f9f9;
+}
+
+.tabelaRecurso{
+  width: 40%;
+  color: #f9f9f9;
+}
