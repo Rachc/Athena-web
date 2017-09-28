@@ -3,42 +3,70 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>Athena - @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+    <nav class="interfaceNav">
+        <!-- Altura de 105px -->
+        <div class="logoInterface">
+            <img src="/Content/img/logoUsuario.png" alt="Athena Logo">
+        </div>
+        <div class="navInterface">
+            <div class="fotoUsuario">
+                <img src="/Content/img/avatarUsuario.png" alt="Nome do Usuario">
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+            <div class="dadosUsuario">
+                <p>Bem vindo</p>
+                <p><span>Fulano</span> <img src="/Content/img/setaBaixo.png" alt=""></p>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    </nav>
+
+    <div class="conteudoInterface">
+        <!-- Aqui vai toda a parte abaixo do menu. Tanto o menu lateral quanto a navegação -->
+
+        <div class="menuLateral">
+            <!-- a soma da largura dessa div com a div telaConteudo deve ser de 100%-->
+            <div class="menuFeature">
+                <!-- no momento só tem projetos -->
+                <div class="featureProjeto">
+                    Projetos
+                </div>
+
+                <div class="listaProjetos">
+                    <!-- no momento ela vai estar com display: none. A idéia é que ela apareça só quando você clica em projetos -->
+                    <ul>
+                        <li>Projeto 1</li>
+                        <li>Projeto 2</li>
+                        <li>Projeto 3</li>
+                        <li>Projeto 4</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="menuExtras">
+                <!-- essa parte da separado do  menu lateral por questão de posicionamento. Essa parte vai ficar lá embaixo-->
+                <div class="mensagemUsuario">
+                    <!-- coloca o background dessa div como a imagem mensagem.png, background repeat: no-repeat e background-position left-->
+                    Mensagem
+                </div>
+                <div class="downloadUsuario">
+                    <!-- Mesmo esquema de mensagem -->
+                    Download
+                </div>
+            </div>
+
+        </div>
+
+        <div class="telaConteudo">
+            @RenderBody()
+        </div>
+
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>

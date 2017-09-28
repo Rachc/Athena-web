@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProjetosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -213,14 +214,32 @@
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\ProjetosControllerViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\img\avatarUsuario.png" />
+    <Content Include="Content\img\download.png" />
+    <Content Include="Content\img\header-img.png" />
+    <Content Include="Content\img\login.png" />
+    <Content Include="Content\img\logoLanding.png" />
+    <Content Include="Content\img\logoUsuario.PNG" />
+    <Content Include="Content\img\mensagem.png" />
+    <Content Include="Content\img\motivo1.png" />
+    <Content Include="Content\img\motivo2.png" />
+    <Content Include="Content\img\motivo3.png" />
+    <Content Include="Content\img\projetos.png" />
+    <Content Include="Content\img\setaBaixo.png" />
+    <Content Include="Content\img\setaCima.png" />
+    <Content Include="Content\img\setaDireita.png" />
+    <Content Include="Content\img\setaProjEsquerda.png" />
+    <Content Include="Content\img\timeline.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -228,6 +247,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\fonte\ContrailOne-Regular.ttf" />
+    <Content Include="Content\fonte\Roboto-Regular.ttf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -274,6 +295,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\Layout_microsoft.cshtml" />
+    <Content Include="Views\Projetos\ListaProjetos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
