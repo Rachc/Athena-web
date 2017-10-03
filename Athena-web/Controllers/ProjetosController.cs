@@ -13,12 +13,7 @@ namespace Athena_web.Controllers
         // GET: Projetos
         public ActionResult ListaProjetos()
         {
-            var projetos = new List<Projeto>
-            {
-                new Projeto() {Id = 1, Nome = "Projeto A"},
-                new Projeto() {Id = 1, Nome = "Projeto B"},
-                new Projeto() {Id = 3, Nome = "Projeto C" }
-            };
+            var projetos = GetProjetos();
 
             var viewModel = new ProjetosControllerViewModel
             {
@@ -26,6 +21,17 @@ namespace Athena_web.Controllers
             };
 
             return PartialView(viewModel);
+        }
+        private IEnumerable<Projeto> GetProjetos()
+        {
+            List<Projeto> lstProj = new List<Projeto>
+            {
+                new Projeto {Id = 1, Nome = "Projeto A"},
+                new Projeto {Id = 1, Nome = "Projeto 2"},
+                new Projeto {Id = 3, Nome = "Projeto C"}
+            };
+
+            return lstProj;
         }
     }
 }
