@@ -8,6 +8,6 @@ namespace Athena_web.ViewModel
 {
     public class ProjetosControllerViewModel
     {
-        public List<Projeto> Projetos { get; set; }
+        public IEnumerable<Projeto> Projetos { get; set; }
     }
 }
