@@ -55,9 +55,9 @@ a{
   text-decoration: none;
 }
 
-/*
+/*************************
 * Landing
-*/
+*************************/
 
 .navegacao{
   height: 114%;
@@ -268,9 +268,9 @@ a{
   color: #7e7e7e;
 }
 
-/*
+/*************************
   Tela do Usuário
-*/
+**************************/
 .interfaceNav{
   height: 105px;
   width: 100%;
@@ -373,9 +373,9 @@ a{
   margin-top: 10px;
 }
 
-/*
+/*************************
   Detalhe de projeto
-*/
+**************************/
 
 .telaConteudo{
   padding: 30px 30px 0 30px;
@@ -410,7 +410,7 @@ a{
 }
 
 .tlImagem{
-
+  margin-bottom: 50px;
 }
 .tlHoje{
 
@@ -550,4 +550,79 @@ a{
 .tabelaRecurso{
   width: 40%;
   color: #f9f9f9;
+}
+
+/*************************
+Tela de mensagem
+*************************/
+
+.mensagemMenu{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.mensagemPonteiro{
+  background-image: url('../img/setaDireita.png');
+  width:10px;
+  height: 13px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.mensagemLink{
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.mensagemConteudo{
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.mensagemCabecalho{
+  background-color: #7e7e7e;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.mensagemCabecalho h3{
+  color: #f9f9f9;
+}
+
+.mensagemCabecalho h3 a{
+  color: #95c6bb;
+}
+
+.remetente{
+  width: 25%;
+}
+
+.funcao{
+  width: 25%;
+}
+
+.assunto{
+  width:50%;
+}
+
+.mensagemUnidade{
+ display: flex;
+ align-items: center;
+ height: 20px;
+ padding: 5px;
+ width: 100%;
+}
+
+.nao-lidas{
+ font-weight: bold;
+}
+
+.mensagemUnidade:nth-child(2n){
+  background-color: #e7e7e7;
 }
