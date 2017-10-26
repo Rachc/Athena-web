@@ -326,6 +326,21 @@ a{
   background-color: #f9f9f9;
 }
 
+.enviarMensagem{
+  text-align: center;
+}
+
+.enviarMensagem button{
+  font-family: 'Contrail One', cursive;
+  background-color: #a2d8cb;
+  border: none;
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .featureProjeto{
   height: 38px;
   padding-left: 45px;
@@ -662,14 +677,14 @@ Modais das telas de mensagem
     cursor: pointer;
 }
 
-.modal-lerMensagem {
-    background-color: #fefefe;
-    margin: 0 auto;
-    border: 1px solid #888;
-    width: 80%;
+.modalConteudo {
+  background-color: #fefefe;
+  margin: 0 auto;
+  border: 1px solid #888;
+  width: 80%;
 }
 
-.lerMensagem-titulo{
+.modalTitulo{
   width: 100%;
   height: 40px;
   background-color: #7e7e7e;
@@ -680,57 +695,68 @@ Modais das telas de mensagem
   padding-top: 5px;
 }
 
-.lerMensagem-mensagem{
+.modalCorpo{
   padding: 20px 50px;
   font-size: 1.2rem;
   max-height: 500px;
   overflow: auto;
 }
 
-.lerMensagem-cabecalho{
+.modalCabecalho{
   display: flex;
   flex-wrap: wrap;
 }
 
-.lerMensagem-1-3{
+.modal-1-3{
   width: 33%;
   padding: 10px 0;
 }
 
-.lerMensagem-1-3 span{
+.modal-1-3 span{
   font-family: 'Contrail One', cursive;
 }
 
-.lerMensagem-1{
+.modal-1-2{
+  width: 50%;
   padding: 10px 0;
 }
 
-.lerMensagem-1 span{
+.modal-1-2 span{
   font-family: 'Contrail One', cursive;
 }
 
-.lerMensagem-msgTitulo{
+.modal-1{
+  padding: 10px 0;
+  width: 100%;
+}
+
+.modal-1 span{
+  font-family: 'Contrail One', cursive;
+}
+
+.modalMsgTitulo{
   font-family: 'Contrail One', cursive;
   width: 100%;
   padding: 10px 0;
 }
 
-.lerMensagem-msg{
+.modal-msg{
   padding: 10px 10px;
   text-align: justify;
   line-height: 30px;
 }
 
-.lerMensagem-msg span {
+.modal-msg span {
   padding-left: 30px;
 }
 
-.lerMensagem-btn{
+.modal-btn{
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
-.lerMensagem-btn button{
+
+.modal-btn button{
   font-family: 'Contrail One', cursive;
   background-color: #a2d8cb;
   border: none;
@@ -739,6 +765,35 @@ Modais das telas de mensagem
   font-size: 1.2rem;
   border-radius: 10px;
   cursor: pointer;
+}
+
+select.modalSelect{
+  border: 1px solid #7e7e7e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 80%;
+  background-color: #fff;
+}
+
+.modal input[type="text"]{
+  border: 1px solid #7e7e7e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 70%;
+}
+
+.modal-1 input[type="text"]{
+  width: 83%;
+}
+
+.modal textarea{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #7e7e7e;
+  border-radius: 5px;
+  resize: none;
 }
 
 /*Cores

@@ -64,11 +64,14 @@
       <!-- é aqui que todo o conteudo vai aparecer. Tem que fazer uma arquivo diferente pra cada feature.-->
 
       <h1>Mensagens</h1>
-
+      <div class="enviarMensagem">
+        <button onclick="document.getElementById('escreverMensagem').style.display='block'">Nova Mensagem</button>
+      </div>
       <div class="mensagemMenu">
         <!-- Esse aqui é o menu de mensagens -->
         <div class="mensagemLink">
-          <div class="mensagemPonteiro"></div> <!-- Essa div é a imagem da seta. O ideal é que a página do menu que esteja em destaque ganhe essa div -->
+          <div class="mensagemPonteiro"></div>
+          <!-- Essa div é a imagem da seta. O ideal é que a página do menu que esteja em destaque ganhe essa div -->
           <h3>Suas Mensagens</h3>
         </div>
         <div class="mensagemLink">
@@ -164,7 +167,7 @@
             <p>Owner</p>
           </div>
 
-          <div class="assunto" >
+          <div class="assunto">
             <p>Solicitação das imagens da obra Por do sol</p>
           </div>
         </div>
@@ -175,54 +178,108 @@
   </div>
 
 
-<!-- Modal para ler mensagem -->
-<div id="id01" class="modal"> <!-- O ideal aqui é colocar o id da mensagem como id da div -->
-  <div class="modal-lerMensagem">
-    <div class="lerMensagem-titulo">
-      Titulo da mensagem
-      <span onclick="document.getElementById('id01').style.display='none'"
-      class="close">&times;</span> <!-- trocar o id do evento para o id da mensagem -->
-    </div>
-
-    <div class="lerMensagem-mensagem">
-      <div class="lerMensagem-cabecalho">
-        <div class="lerMensagem-1-3"> <!-- Essa classe é só de posicionamento. Ela vai ocupar 1/3 do tamanho -->
-          <span>Projeto: </span> projeto 1
-        </div>
-        <div class="lerMensagem-1-3">
-          <span>Remetente: </span> Fulano
-        </div>
-        <div class="lerMensagem-1-3">
-          <span>Função: </span> Gerente
-        </div>
-        <div class="lerMensagem-1"> <!-- vai ocupar 1 inteiro da largura total -->
-          <span>Assunto: </span> Titulo da mensagem
-        </div>
+  <!-- Modal para ler mensagem -->
+  <div id="id01" class="modal">
+    <!-- O ideal aqui é colocar o id da mensagem como id da div -->
+    <div class="modalConteudo">
+      <div class="modalTitulo">
+        Titulo da mensagem
+        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+        <!-- trocar o id do evento para o id da mensagem -->
       </div>
 
-      <div class="lerMensagem-corpo">
-        <div class="lerMensagem-msgTitulo">
-          Mensagem:
+      <div class="modalCorpo">
+        <div class="modalCabecalho">
+          <div class="modal-1-3">
+            <!-- Essa classe é só de posicionamento. Ela vai ocupar 1/3 do tamanho -->
+            <span>Projeto: </span> projeto 1
+          </div>
+          <div class="modal-1-3">
+            <span>Remetente: </span> Fulano
+          </div>
+          <div class="modal-1-3">
+            <span>Função: </span> Gerente
+          </div>
+          <div class="modal-1">
+            <!-- vai ocupar 1 inteiro da largura total -->
+            <span>Assunto: </span> Titulo da mensagem
+          </div>
         </div>
 
-        <div class="lerMensagem-msg"> <!-- Esse span é importante para dar identação na primeira linha -->
-          <p><span></span>Cupcake ipsum dolor sit amet. Dragée tiramisu carrot cake. Wafer cake tart tootsie roll brownie dragée pastry.</p>
-          <p>Lollipop sugar plum marzipan macaroon. Jelly brownie ice cream cotton candy cookie. Tootsie roll sweet tiramisu jelly cheesecake pudding caramels soufflé cookie. Ice cream gummies croissant.</p>
-          <p><span></span>Chupa chups carrot cake jelly-o bonbon. Pudding sugar plum cookie oat cake jelly-o. Pudding chocolate bar cake topping cookie. Lollipop chupa chups marshmallow marzipan.</p>
-          <p><span></span>Gummies marshmallow tart jujubes sweet roll dessert. Sesame snaps jelly-o biscuit jelly-o sesame snaps gingerbread chocolate bar lollipop. Tiramisu gummies donut dessert bonbon donut toffee jelly.</p>
-          <p><span></span>Chocolate bar tootsie roll cake bonbon jelly-o tootsie roll. Bonbon gummi bears jujubes biscuit dragée sesame snaps. Lollipop cheesecake caramels tiramisu wafer marshmallow. Cookie sweet cupcake sugar plum croissant biscuit.</p>
+        <div class="modalCcorpo">
+          <div class="modalMsgTitulo">
+            Mensagem:
+          </div>
+
+          <div class="modal-msg">
+            <!-- Esse span é importante para dar identação na primeira linha -->
+            <p><span></span>Cupcake ipsum dolor sit amet. Dragée tiramisu carrot cake. Wafer cake tart tootsie roll brownie dragée pastry.</p>
+            <p>Lollipop sugar plum marzipan macaroon. Jelly brownie ice cream cotton candy cookie. Tootsie roll sweet tiramisu jelly cheesecake pudding caramels soufflé cookie. Ice cream gummies croissant.</p>
+            <p><span></span>Chupa chups carrot cake jelly-o bonbon. Pudding sugar plum cookie oat cake jelly-o. Pudding chocolate bar cake topping cookie. Lollipop chupa chups marshmallow marzipan.</p>
+            <p><span></span>Gummies marshmallow tart jujubes sweet roll dessert. Sesame snaps jelly-o biscuit jelly-o sesame snaps gingerbread chocolate bar lollipop. Tiramisu gummies donut dessert bonbon donut toffee jelly.</p>
+            <p><span></span>Chocolate bar tootsie roll cake bonbon jelly-o tootsie roll. Bonbon gummi bears jujubes biscuit dragée sesame snaps. Lollipop cheesecake caramels tiramisu wafer marshmallow. Cookie sweet cupcake sugar plum croissant biscuit.</p>
+          </div>
         </div>
-      </div>
-      <div class="lerMensagem-btn">
-        <button onclick="document.getElementById('id01').style.display='none'">Fechar</button>
-        <button>Responder</button>
+        <div class="modal-btn">
+          <button onclick="document.getElementById('id01').style.display='none'">Fechar</button>
+          <button>Responder</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+
+  <!-- Modal para Escrever mensagem -->
+  <div id="escreverMensagem" class="modal">
+    <!-- O ideal aqui é colocar o id da mensagem como id da div -->
+    <div class="modalConteudo">
+      <div class="modalTitulo">
+        Escrever Mensagem
+        <span onclick="document.getElementById('escreverMensagem').style.display='none'" class="close">&times;</span>
+        <!-- trocar o id do evento para o id da mensagem -->
+      </div>
+
+      <div class="modalCorpo">
+        <div class="modalCabecalho">
+          <div class="modal-1-2">
+            <!-- Essa classe é só de posicionamento. Ela vai ocupar 1/3 do tamanho -->
+            <span>Projeto: </span>
+            <select class="modalSelect">
+              <option value="" ></option>
+              <option value="id01" >Projeto 01 </option>
+              <option value="id02" >Projeto 02</option>
+              <option value="id03" >Projeto 03</option>
+              <option value="id04" >Projeto 04</option>
+            </select>
+          </div>
+          <div class="modal-1-2">
+            <span>Destinatario: </span>
+            <input type="text">
+          </div>
+          <div class="modal-1">
+            <!-- vai ocupar 1 inteiro da largura total -->
+            <span>Assunto: </span>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="modalCcorpo">
+          <div class="modalMsgTitulo">
+            Mensagem:
+          </div>
+
+          <div class="modal-msg">
+            <!-- Esse span é importante para dar identação na primeira linha -->
+            <textarea></textarea>
+          </div>
+        </div>
+        <div class="modal-btn">
+          <button>Enviar</button>
+          <button onclick="document.getElementById('escreverMensagem').style.display='none'">Cancelar</button>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
 </body>
 
