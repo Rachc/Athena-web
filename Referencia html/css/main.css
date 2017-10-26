@@ -617,6 +617,7 @@ Tela de mensagem
  height: 20px;
  padding: 5px;
  width: 100%;
+ cursor: pointer;
 }
 
 .nao-lidas{
@@ -626,3 +627,135 @@ Tela de mensagem
 .mensagemUnidade:nth-child(2n){
   background-color: #e7e7e7;
 }
+
+/*******************
+Modais das telas de mensagem
+*********************/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* The Close Button */
+.close {
+    color: #f9f9f9;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #95c6bb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-lerMensagem {
+    background-color: #fefefe;
+    margin: 0 auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.lerMensagem-titulo{
+  width: 100%;
+  height: 40px;
+  background-color: #7e7e7e;
+  color: #f9f9f9;
+  font-family: 'Contrail One', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.lerMensagem-mensagem{
+  padding: 20px 50px;
+  font-size: 1.2rem;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.lerMensagem-cabecalho{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lerMensagem-1-3{
+  width: 33%;
+  padding: 10px 0;
+}
+
+.lerMensagem-1-3 span{
+  font-family: 'Contrail One', cursive;
+}
+
+.lerMensagem-1{
+  padding: 10px 0;
+}
+
+.lerMensagem-1 span{
+  font-family: 'Contrail One', cursive;
+}
+
+.lerMensagem-msgTitulo{
+  font-family: 'Contrail One', cursive;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.lerMensagem-msg{
+  padding: 10px 10px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.lerMensagem-msg span {
+  padding-left: 30px;
+}
+
+.lerMensagem-btn{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.lerMensagem-btn button{
+  font-family: 'Contrail One', cursive;
+  background-color: #a2d8cb;
+  border: none;
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*Cores
+Azul athena(para Background): #a2d8cb
+Azul athena (para textos):  #95c6bb
+Branco gelo: #f9f9f9
+Cinza escuro: #7e7e7e
+Cinza Claro: #e7e7e7
+
+Verde atividades: #a7d8a2
+Roxo atividades: #ada2d8
+Laranja Atividades: #d8bea2
+
+*/
+
+/*
+fontes:
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Contrail One', cursive;
+*/
