@@ -306,6 +306,30 @@ a{
   font-size: 1.2em;
 }
 
+.menuUsuario{
+  width: 200px;
+  right: 2px;
+  margin-top: 180px;
+  background-color: #e7e7e7;
+  position: absolute;
+  display: none;
+}
+
+.menuUsuario hr{
+  width: 180px;
+  margin: 0 auto;
+  border: 1px solid #a2d8cb;
+  background-color: #a2d8cb;
+}
+
+.menuUsuario ul{
+  list-style-type: none;
+}
+
+.menuUsuario ul li{
+  padding: 5px;
+}
+
 .conteudoInterface{
   display: flex;
   min-height: 560px;
@@ -851,6 +875,14 @@ Tela de cadastro
   margin-bottom: 10px;
 }
 
+.modal-1 input[type="password"]{
+  border: 1px solid #7e7e7e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 90%;
+  margin: 0 auto 10px;
+}
+
 input[type="text"].cadastroData{
   width: 25%;
 }
@@ -869,6 +901,21 @@ input[type="text"].cadastroData{
   font-size: 1.2rem;
   border-radius: 10px;
   cursor: pointer;
+}
+
+#loginSenha .modalConteudo{
+  width: 30%;
+  text-align: center;
+}
+
+#loginSenha .modal-btn{
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#loginSenha .modal-btn button{
+  margin: 5px;
 }
 
 /*Cores
