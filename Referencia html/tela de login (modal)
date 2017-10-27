@@ -1,0 +1,139 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta charset="utf-8">
+<title>Athena</title>
+<!-- <link href="https://fonts.googleapis.com/css?family=Contrail+One|Roboto" rel="stylesheet"> -->
+<link rel="stylesheet" href="css/main.css">
+
+      <script type ="text/javascript" src="js/script.js">
+      </script>
+      
+  </head>
+  <body>
+    <div class="navegacao">
+      <!--nesse css deve ter altura de 150px. background image header-algo.png, background position right e background color white-->
+      <div class="logoLanding"> <!-- essa imagem é a logo.landing, que é maior. Faz uma div do tamanho exato da imagem (altura e largura), e usa a imagem como background-image, além do float right -->
+      <nav> <!-- float right, os itens devem ser listas. O ultimo item é um botão com border radius 20px -->
+        <li><button onclick ="document.getElementById('id01').style.display='block'">Login</button></li>
+        <li>Cadastro</li>
+        <li>Sobre</li>
+      </nav>
+      </div>
+
+
+
+      <div class="header"> <!-- altura 550px, mesmo background da navegação. Quero fazer um paralax nele com JS ;D depois colo lá um código de exemplo -->
+
+        <div class="apresentacao"> <!-- faz ocupando 40% da largura tela, com um padding left pra desencostar do canto e text align center.
+        Os botões também tem border radius de 20px. se vocÊ sentir necessidade, separa os botões em div (mas acho que não vai precisar. da um padding neles também).
+        coloca o titulo como um H1, e coloca um <spam></spam> dentro do que tiver cor azul. a gente trata isso no css -->
+        <h1>MANTENHA <span>CONTROLE</span> DOS SEUS PROJETOS</h1>
+        <p>Controle seus recursos, atividades e se <br>comunique facilmente com sua equipe (:<p>
+          <button class="btn1">SAIBA MAIS (:</button>
+          <button class="btn2">CADASTRE-SE</button>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="sobre" id="diferencial"> <!-- no css estiliza a classe, e não o ID. Acho que o display dele é flex inline (coloca qq coisa e olha no inspetor do chrome) -->
+      <div class="motivo1"> <!-- display block, acho. OU flex block. Não sei. testa -->
+        <div class="motivo1Imagem"> <!-- Mesmo esquema do logo. deixa a imagem como background-image -->
+
+        </div>
+        <div class="motivo1texto"><!-- Joga o titulo dentro de uma h4 e o texto dentro de um p -->
+          <h4>MOTIVO-TITULO</h4>
+          <p> Lorean ipsum dolor sit amet, consectur adipiscing edit.Lorem ipsum dolor sit amet, consectetur adipiscing edit</p>
+          <br>
+          <p> Lorean ipsum dolor sit amet, consectur adipiscing edit.Lorem ipsum dolor sit amet, consectetur adipiscing edit</p>
+        </div>
+
+      </div>
+
+      <div class="motivo2">
+        <div class="motivo2Imagem">
+
+        </div>
+        <div class="motivo2texto">
+            <h4>MOTIVO-TITULO</h4>
+            <p> Lorean ipsum dolor sit amet, consectur adipiscing edit.Lorem ipsum dolor sit amet, consectetur adipiscing edit</p>
+            <br>
+            <p> Lorean ipsum dolor sit amet, consectur adipiscing edit.Lorem ipsum dolor sit amet, consectetur adipiscing edit</p>
+        </div>
+
+      </div>
+
+      <div class="motivo3">
+        <div class="motivo3Imagem">
+
+        </div>
+        <div class="motivo3texto">
+            <h4>MOTIVO-TITULO</h4>
+            <p> Lorean ipsum dolor sit amet, consectur adipiscing edit.Lorem ipsum dolor sit amet, consectetur adipiscing edit</p>
+            <br>
+            <p> Lorean ipsum dolor sit amet, consectur adipiscing edit.Lorem ipsum dolor sit amet, consectetur adipiscing edit</p>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="cadastro" id="cadastro"> <!-- não sabemos o que vai aqui :P só sabemos que o fundo é azul -->
+
+      <h1>Cadastre-se agora e comece a usar o <span>Athena</span> (;</h1>
+      <form class="" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="Nome" required>
+          <input type="text" name="" value="" placeholder="E-mail" required>
+        <button type="button" name="button">Cadastrar</button>
+      </form>
+
+    </div>
+
+
+    <div class="sobre" id="Sobre"> <!-- não sabemos o que vai aqui :P só sabemos que o fundo é azul -->
+
+      <h2>NOVA DIV \O\</h2>
+      <p>WEEEEEEEEEEEEEE</p>
+
+<!-- --------------------- apartir daqui ---------------------------------------- -->
+
+    </div>
+      <form id ="form1" runat ="server">
+      <div id = "id01" class = "modal">
+          <div class ="loginModal">
+              <header class="porta">
+                  <img src ="img/login.png"/><p class = "porta">Login</p>
+                  <a onclick = "document.getElementById('id01').style.display='none'" title ="Fechar" class ="fechar">X</a>
+                 </header>
+              <br />
+
+             <div class = "centroM">
+                 
+                 <br />
+                 <br />
+                 <asp:Label class ="LBlogin" ID="Label1" runat="server" Text="Usuário"></asp:Label>
+                 <asp:TextBox class ="txtlog" ID="TextBox1" runat="server"></asp:TextBox>
+                 <br />
+                 <br />
+                 <asp:Label class ="LBlogin" ID="Label2" runat="server" Text="Senha"></asp:Label>
+                 <asp:TextBox class="txtlog" ID="TextBox2" runat="server"></asp:TextBox>
+              
+                 <asp:Button class = "entrar" ID="Entrar" runat="server" Text="Entrar" />
+             </div>
+              <footer class = "rodapeM">
+                  <a>Sou um novo usuário</a>
+              </footer>
+          </div>
+      </div>
+      </form>
+
+    <footer class="landing-footer">
+      Feito por Athena © 2017
+      CADASTRO TAMBEEEEEEEEEEEEEEEEEEEM
+    </footer>
+    
+  </body>
+</html>
