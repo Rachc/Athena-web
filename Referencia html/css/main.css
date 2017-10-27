@@ -796,6 +796,81 @@ select.modalSelect{
   resize: none;
 }
 
+/*********************
+Tela de cadastro
+**********************/
+
+.telaCadastro{
+  background-image: url('../img/corujabg.png');
+}
+
+.cadastroCapsula{
+  width: 50%;
+  height: 500px;
+  background-color: #f7f7f7;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #7e7e7e;
+  padding: 30px;
+  color: #7e7e7e;
+}
+
+.cadastroCapsula h1{
+  text-align: center;
+  font-family: 'Contrail One', cursive;
+  margin-bottom: 20px;
+}
+
+.cadastroCol{
+  width: 50%;
+  margin: 0 25%;
+}
+
+.cadastroCol p{
+  width: 50%;
+  font-family: 'Contrail One', cursive;
+}
+
+.cadastroData{
+  width: 33%;
+}
+
+.cadastroCol input[type="text"]{
+  border: 1px solid #7e7e7e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cadastroCol input[type="email"]{
+  border: 1px solid #7e7e7e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="text"].cadastroData{
+  width: 25%;
+}
+
+.cadastrobtn{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cadastroCol button{
+  font-family: 'Contrail One', cursive;
+  background-color: #a2d8cb;
+  border: none;
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /*Cores
 Azul athena(para Background): #a2d8cb
 Azul athena (para textos):  #95c6bb
